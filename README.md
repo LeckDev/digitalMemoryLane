@@ -1,204 +1,198 @@
-<a id="readme-top" name="readme-top"></a>
+<a name="readme-top"></a>
 
+<!-- LOGO DU PROJET -->
 <br />
-
 <div align="center">
-
-  <h3 align="center">🚀 React TypeScript Boilerplate</h3>
-
-  <p align="center">Welcome to my front-end React boilerplate! This is a personal endeavor, crafted to streamline both my personal and professional projects as I advance through the React and TypeScript ecosystem.
+  <a href="https://github.com/LeckDev/digitalMemoryLane">
+    <img src="chemin-vers-votre-logo-si-disponible" alt="Logo" width="80" height="80">
+  </a>
+<h3 align="center">Digital memory lane : Réseau social frise (TODO : à changer)</h3>
+  <p align="center">
+    Le réseau social pour partager votre frise.
   </p>
-  </br>
-   <a href="https://github.com/Netsbump/boilerplate-react-ts/issues">Report Issues</a>
-   ·
-   <a href="https://github.com/Netsbump/boilerplate-react-ts/pulls">Request Feature</a>
 </div>
 
-<div>
+***
 
-### ✨ Features
-
-- **React & TypeScript:** The foundation of this boilerplate. I'm diving into modern web development with React and bolstering my expertise through TypeScript.
-- **ESLint & Prettier:** Discipline first! I've equipped myself with ESLint and Prettier to ensure I adhere to best practices, keep my code neat, and maintain consistency in my coding style.
-- **Vite.js:** Performance and rapid development in focus. I've adopted Vite.js to keep abreast of modern development tools and to enhance my development workflow's efficiency.
-
-### 🤝 Contributions & Usage
-
-Feel free to use this boilerplate if you find any utility in it. Contributions, suggestions, or feedback are always welcome.
-
-### 🔴 Note
-
-The remainder of this README delves into detailed explanations about files and configurations. This section is currently in French. My apologies for any inconvenience! I'll aim to provide an English translation in the future.
-
-</div>
-
-<br />
-
-<!-- TABLE DES MATIERES -->
+<!-- TABLE DES MATIÈRES -->
 <details>
-  <summary>Table des matières</summary>
-		<ul>
-      <li><a href="#projet-vitejs">Projet React avec Vite.js </a></li>
-          <ol>
-            <li><a href="#fichiers-vitejs">Contenu des fichiers générés par Vite</a></li>
-          </ol>
-      <li><a href="#getting-started">Getting Started</a></li>
-      		<ol>
-            <li><a href="#prerequis">Prérequis</a></li>
-        		<li><a href="#recuperation-boilerplatet">Récupération du Boilerplate</a></li>
-            <li><a href="#config-vsc">Configuration de Visual Studio Code</a></li>
-            <li><a href="#installation-dependances">Installation des dépendances</a></li>
-            <li><a href="#run-projet">Lancement du projet</a></li>
-            <li><a href="#build-projet">Build du projet</a></li>
-      		</ol>
-    </ul>
+  <summary>Table des Matières</summary>
+  <ol>
+    <li><a href="#description-du-projet">A propos du projet</a></li>
+    <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+    <li><a href="#technologies-utilisees">Technologies Utilisées</a></li>
+    <li><a href="#contribuer">Contribuer</a></li>
+    <li><a href="#licence">Licence</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <!-- Ajoutez d'autres sections selon vos besoins -->
+  </ol>
 </details>
 
-</br>
+<!-- A PROPOS DU PROJET -->
+<p id="description-du-projet"></p>
 
-<p id="projet-vitejs"></p>
+# À propos du Projet
 
-# Projet React avec Vite.js
+Un réseau social permettant à un utilisateur ou à un groupe d'utilisateurs de créer leurs frises personnalisables
 
-Vite est un outil de développement front-end qui nous permet de démarrer rapidement un projet avec des configurations minimales. Il offre un démarrage rapide, des rechargements à chaud et d'autres fonctionnalités pour améliorer votre flux de développement. Si vous souhaitez en savoir plus sur Vite, consultez la [documentation officielle de Vite](https://vitejs.dev/guide/).
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+***
 
-## Contenu des fichiers générés par Vite
+<!-- FONCTIONNALITES -->
+<p id="fonctionnalites"></p>
 
-Voici une explication succincte de chaque fichier généré par Vite dans ce projet React + TypeScript :
+## Fonctionnalités
 
-- `index.html`: Sert de squelette HTML à l'application. Contient le script qui charge le JavaScript initial.
+- Frise : Les utilisateurs créent/modifient une frise
+- Profil : Les utilisateurs créent leur profil et postent leurs frises
+- Fil d'actualité : Les utilisateurs consultent leur fil d'actualité et voient le détail des évènements
 
-- `src/main.tsx`: Le point d'entrée de l'application. Ce fichier initialise l'application et intègre le composant racine dans le DOM.
+## Fonctionnalités à venir 
 
-- `src/App.tsx`: : Le composant principal de l'application. Il contient la structure et la logique de base de l'interface utilisateur.
+- Ami : Les utilisateurs s'ajoutent en ami et voient les frises de ceux-ci dans leur fil d'actualité
+- Réaction : Les utilisateurs réagissent sur les frises
+- Frise en groupe : Les utilisateurs ajoutent des amis sur une frise et toutes ces personnes peuvent la modifier
+- Frise communautaire : Les utilisateurs créent des communautés et peuvent en rejoindre. Les frises des communautés qu'un utilisateur suit se retrouvent dans le fil d'actualité
+- Rôle communautaire : Les admins d'une communauté peuvent gérer les rôles des utilisateurs afin que ceux-ci puissent gérer la communauté en fonction de ses droits
 
-- `vite.config.js`: Le fichier de configuration pour Vite qui définit comment le projet est construit et servi. Il permet de personnaliser le processus de développement et de production selon vos besoins.
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
-- `package.json`: Décrit les métadonnées du projet, les dépendances, et les scripts pour démarrer, construire et tester l'application.
+***
 
-- `tsconfig.json`: Configure les options de compilation de TypeScript pour le projet, aidant à gérer les types et la structure du code.
+<!-- TECHNOLOGIES UTILISEES -->
+<p id="technologies-utilisees"></p>
 
-- `tsconfig.node.json`: Configuration de TypeScript pour les scripts exécutés dans un environnement Node.js, séparée du code source principal.
+## Technologies Utilisées (TODO : à voir avec Sten)
 
-- `.eslintrc.cjs`: Ce fichier contient la configuration d'ESLint pour votre projet. ESLint est un outil de linting qui vous aide à identifier et corriger les problèmes dans votre code, tels que les erreurs de syntaxe, les problèmes de style de code, et les mauvaises pratiques de programmation. Dans ce fichier, vous pouvez définir des règles de linting, des environnements, des plugins, etc.
+- Front-End : React, TypeScript, React Router, Chakra UI.
+- Back-End : .NET, Entity Framework Core, LINQ.
+- Base de Données : PostgreSQL.
+- Qualité du Code : Eslint, Prettier.
 
-- `.prettierrc.cjs`: Ce fichier contient la configuration de Prettier pour votre projet. Prettier est un formatteur de code qui garantit que votre code est cohérent et lisible. Il reformate automatiquement votre code en fonction des règles que vous avez définies dans le fichier de configuration .prettierrc.cjs.
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
 
-- `.vscode/` : Contient des configurations spécifiques pour VSCode, incluant des recommandations d'extensions et des paramètres pour ESLint et Prettier.
+***
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- CONTRIBUER -->
+<p id="contribuer"></p>
 
-<p id="getting-started"></p>
+## Contribuer (TODO : à voir avec Sten)
 
-# Getting Started
+Voici un guide étape par étape pour contribuer :
 
-Pour démarrer avec ce boilerplate, suivez les étapes ci-dessous pour installer les prérequis, récupérer le projet, configurer votre environnement de développement, installer les dépendances ainsi que démarrer et build votre projet.
+1. Prérequis
 
-<p id="prerequis"></p>
-  
-1. _Prérequis_
+Avant de commencer, assurez-vous d'avoir installé les logiciels suivants sur votre machine :
 
-- Assurez-vous d'avoir Node.js installé sur votre machine. Vite.js requiert au moins la version `18.0.0` de Node.js. Vous pouvez télécharger la dernière version LTS ou actuelle de Node.js depuis ce lien : [télécharger Node.js](https://nodejs.org/fr/download).
+  Git: Nécessaire pour cloner le dépôt et gérer les versions. Télécharger Git.
+  Docker : A venir
+  Autres : A vernir
 
-- Pour vérifier la version de Node.js installée sur votre système, exécutez la commande suivante dans votre terminal :
+2. Fork du Projet
 
-```sh
-node -v
+Créez une copie du projet sur votre compte GitHub. Cela vous permet d'apporter des modifications sans affecter le projet original.
+
+  1. Visitez le repository GitHub de DuckLift.
+  2. Cliquez sur le bouton Fork en haut à droite de la page.
+
+3. Cloner le Fork
+
+Après avoir forké le projet, clonez-le sur votre machine locale pour commencer à travailler dessus.
+
+
+```bash
+git clone https://github.com/Netsbump/DuckLift.git
+cd DuckLift
 ```
 
-<p id="recuperation-boilerplate"></p>
-  
-2. _Récupération du Boilerplate
+4. Configurer un Upstream Remote
 
-Pour utiliser ce boilerplate, commencez par le récupérer depuis GitHub :
+Pour garder votre fork à jour avec le projet original, configurez un remote "upstream" pointant vers le dépôt d'origine.
 
-a) Rendez-vous sur la page GitHub du projet.
-
-b) Cliquez sur le bouton "Use this template" pour créer une nouvelle copie du repository sous votre propre compte GitHub.
-
-c) Clonez le repository sur votre machine locale avec :
-
-```sh
-git clone <URL_DU_REPO>
-cd <NOM_DU_REPO>
+```bash
+git remote add upstream https://github.com/Netsbump/DuckLift.git
 ```
 
-Pour ouvrir le projet directement dans VS Code, exécutez :
+5. Créer une Branche de Fonctionnalité
 
-```sh
-code .
+Pour chaque nouvelle fonctionnalité ou correction, créez une nouvelle branche. Cela facilite le suivi des changements et la gestion des pull requests.
+
+```bash
+git checkout -b feature/NomDeVotreFonctionnalité
 ```
 
-<p id="config-vsc"></p>
-  
-3. _Configuration de Visual Studio Code_
+6. Faire des Changements
 
-Pour une expérience de développement optimale, VSCode vous proposera d'installer les extensions définies dans le fichier .vscode/extensions.json. Il est recommandé d'installer les extensions suivantes :
+Apportez vos modifications ou ajouts au code. Assurez-vous de respecter les conventions de codage et les bonnes pratiques du projet.
 
-a) Obligatoires
+7. Garder Votre Branche à Jour
 
-- ESLint (`dbaeumer.vscode-eslint`) - Pour le linting du code JavaScript et TypeScript.
-- Prettier (`esbenp.prettier-vscode`) - Pour le formatage automatique du code.
+Avant de pousser vos changements, assurez-vous que votre branche est à jour avec la branche principale du projet original.
 
-b) Suggestions recommandées
 
-- Error Lens (`usernamehw.errorlens`) - Pour une meilleure visibilité des erreurs et avertissements dans le code.
-- Material Icon Theme (`pkief.material-icon-theme`) - Pour des icônes de fichiers améliorées dans l'explorateur de VSCode.
-- Pretty TypeScript Errors (`yoavbls.pretty-ts-errors`) - Pour des messages d'erreur TypeScript plus lisibles et plus agréables visuellement.
-
-c) Utilisation
-
-Avec ces extensions, chaque fois que vous sauvegardez un fichier, ESLint corrigera automatiquement les problèmes (selon les règles définies) et Prettier formatera le code.
-
-d) Conseils
-
-Si vous rencontrez des comportements inattendus ou des conflits entre les extensions, vérifiez si d'autres formateurs de code ou extensions liées à ESLint/Prettier sont activés et désactivez-les.
-
-<p id="installation-dependances"></p>
-  
-4. _Installation des dépendances_
-
-Positionnez-vous à la racine du projet (là où se trouve le fichier `package.json`) et installez les dépendances nécessaires avec :
-
-```sh
-npm install
+```bash
+git fetch upstream
+git rebase upstream/main
 ```
 
-Cette commande peut être adaptée à votre gestionnaire de package préféré (par exemple `yarn install` ou `pnpm install`).
+8. Committez vos Changements
 
-<p id="run-projet"></p>
-  
-5. _Lancement du projet_
+Faites des commits clairs et significatifs. Chaque commit doit idéalement représenter une unité logique de changement.
 
-Pour lancer l'application en mode développement, exécutez la commande suivante :
+ Chaque commit doit idéalement représenter une unité logique de changement. Voici quelques bonnes pratiques pour les messages de commit :
 
-```sh
-npm run dev
+- Commencez le message par un type de changement comme feat, fix, docs, style, refactor, test, ou chore.
+- Utilisez le format type: sujet pour vos messages.
+- Le sujet ne doit pas dépasser 50 caractères.
+- Utilisez l'impératif présent, par exemple : "Ajoute" plutôt que "Ajouté".
+
+```bash
+git add .
+git commit -m "feat: Ajoute une fonction de recherche avancée"
 ```
 
-Cela lancera le serveur de développement de Vite.js et ouvrira automatiquement votre application dans le navigateur.
+9. Push Vers Votre Fork
 
-<p id="build-projet"></p>
-  
-6. _Build du projet_
+Poussez les changements de votre branche vers votre fork sur GitHub.
 
-Pour générer les fichiers statiques pour le déploiement de votre application en mode production, exécutez :
-
-```sh
-npm run build
+```bash
+git push origin feature/NomDeVotreFonctionnalité
 ```
 
-Vite.js créera par défaut un dossier dist/ contenant tous vos fichiers optimisés pour la production.
+10. Ouvrir une Pull Request
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  - Retournez sur le repository GitHub de DuckLift.
+  - Vous verrez un bouton Compare & pull request. Cliquez dessus.
+  - Remplissez une description claire et détaillée de vos changements.
+  - Soumettez la pull request.
+
+11. Bonnes Pratiques
+
+  - Code propre et lisible : Assurez-vous que votre code est bien formaté et suit les conventions du projet.
+  - Tests : Ajoutez des tests pour les nouvelles fonctionnalités ou les corrections de bugs.
+  - Documentation : Mettez à jour le README et tout autre document nécessaire pour refléter vos changements.
+
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+***
 
 <!-- LICENCE -->
 <p id="licence"></p>
 
-# Licence
+## Licence
 
 Distribué sous la Licence MIT. Voir le fichier LICENSE pour plus d'informations.
+<p align="right">(<a href="#readme-top">retour en haut</a>)</p>
+
+***
+
+<!-- CONTACT -->
+<p id="contact"></p>
+
+## Contact
+
+Twitter - [@votre_twitter] - email@example.com
+Linkedin 
 
 <p align="right">(<a href="#readme-top">retour en haut</a>)</p>
